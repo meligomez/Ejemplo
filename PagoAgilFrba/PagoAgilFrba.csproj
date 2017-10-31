@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC76EDC4-20B6-4599-B13A-E03CD10702A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PagoAgilFrba</RootNamespace>
+    <AssemblyName>PagoAgilFrba</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbmCliente\ABM_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\ABM_cliente.Designer.cs">
+      <DependentUpon>ABM_cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCliente\agregar_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\agregar_cliente.Designer.cs">
+      <DependentUpon>agregar_cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCliente\eliminar_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\eliminar_cliente.Designer.cs">
+      <DependentUpon>eliminar_cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCliente\modificar_clienteElegido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\modificar_clienteElegido.Designer.cs">
+      <DependentUpon>modificar_clienteElegido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCliente\modificar_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCliente\modificar_cliente.Designer.cs">
+      <DependentUpon>modificar_cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmEmpresa\abm_empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmEmpresa\abm_empresa.Designer.cs">
+      <DependentUpon>abm_empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmEmpresa\agregar_empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmEmpresa\agregar_empresa.Designer.cs">
+      <DependentUpon>agregar_empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmEmpresa\eliminar_empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmEmpresa\eliminar_empresa.Designer.cs">
+      <DependentUpon>eliminar_empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmEmpresa\modificarElegido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmEmpresa\modificarElegido.Designer.cs">
+      <DependentUpon>modificarElegido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmEmpresa\modificar_empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmEmpresa\modificar_empresa.Designer.cs">
+      <DependentUpon>modificar_empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmFactura\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmFactura\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\ABM_Rol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\ABM_Rol.Designer.cs">
+      <DependentUpon>ABM_Rol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\Alta_Rol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\Alta_Rol.Designer.cs">
+      <DependentUpon>Alta_Rol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\Funcionalidad.cs" />
+    <Compile Include="AbmRol\ModificarRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\ModificarRol.Designer.cs">
+      <DependentUpon>ModificarRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\Rol.cs" />
+    <Compile Include="AbmSucursal\Abm_sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSucursal\Abm_sucursal.Designer.cs">
+      <DependentUpon>Abm_sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSucursal\agregar_sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSucursal\agregar_sucursal.Designer.cs">
+      <DependentUpon>agregar_sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSucursal\eliminar_sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSucursal\eliminar_sucursal.Designer.cs">
+      <DependentUpon>eliminar_sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSucursal\modificar_sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSucursal\modificar_sucursal.Designer.cs">
+      <DependentUpon>modificar_sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmSucursal\modificar_sucursalElegida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmSucursal\modificar_sucursalElegida.Designer.cs">
+      <DependentUpon>modificar_sucursalElegida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmUsuario\UsuarioDAL.cs" />
+    <Compile Include="BDComun.cs" />
+    <Compile Include="GD2C2017DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GD2C2017DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoEstadistico\estadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoEstadistico\estadisticas.Designer.cs">
+      <DependentUpon>estadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroPago\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroPago\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rendicion\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rendicion\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Trimesre.cs" />
+    <Compile Include="VentanaCobrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaCobrador.Designer.cs">
+      <DependentUpon>VentanaCobrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaPorRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaPorRol.Designer.cs">
+      <DependentUpon>VentanaPorRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaPrincipal.Designer.cs">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AbmCliente\agregar_cliente.resx">
+      <DependentUpon>agregar_cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmEmpresa\agregar_empresa.resx">
+      <DependentUpon>agregar_empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmEmpresa\eliminar_empresa.resx">
+      <DependentUpon>eliminar_empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmEmpresa\modificarElegido.resx">
+      <DependentUpon>modificarElegido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\ABM_Rol.resx">
+      <DependentUpon>ABM_Rol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\Alta_Rol.resx">
+      <DependentUpon>Alta_Rol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmSucursal\eliminar_sucursal.resx">
+      <DependentUpon>eliminar_sucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmSucursal\modificar_sucursal.resx">
+      <DependentUpon>modificar_sucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmSucursal\modificar_sucursalElegida.resx">
+      <DependentUpon>modificar_sucursalElegida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoEstadistico\estadisticas.resx">
+      <DependentUpon>estadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VentanaCobrador.resx">
+      <DependentUpon>VentanaCobrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaPorRol.resx">
+      <DependentUpon>VentanaPorRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaPrincipal.resx">
+      <DependentUpon>VentanaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GD2C2017DataSet.xsc">
+      <DependentUpon>GD2C2017DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GD2C2017DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GD2C2017DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GD2C2017DataSet.xss">
+      <DependentUpon>GD2C2017DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
